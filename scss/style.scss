@@ -1,0 +1,784 @@
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=Barlow:wght@500;600&family=Inter:wght@400;500;600;700&family=Lato:wght@700&family=Lekton:wght@700&family=Nunito+Sans:wght@800&family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap');
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  background: #f8fcff;
+}
+._container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.about-container {
+  width: 301px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #404041;
+    text-transform: uppercase;
+  }
+}
+.visa-card {
+  width: 370px;
+  height: 230px;
+
+  .visa-card__head {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(181.06deg, #222223 0.91%, #2b2b31 100%);
+    .visa-card__head-chip {
+      margin-left: 30px;
+    }
+    .visa-card__head-numbers {
+      margin-left: 113px;
+    }
+  }
+  .visa-card__main {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(165.87deg, #ffffff 6.45%, #f3fbff 99.38%);
+    .visa-card__main-name {
+      align-self: end;
+      margin-left: 24px;
+      margin-bottom: 15.6px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      color: #818486;
+      letter-spacing: 0.3em;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      text-transform: uppercase;
+    }
+    .visa-card__main-visa-logo {
+      width: 104px;
+      height: 34px;
+      margin-left: 2.3px;
+    }
+    .visa-card__main-mc-logo {
+      width: 34px;
+      height: 21px;
+      margin-left: 84.83px;
+      align-self: end;
+      margin-bottom: 16.9px;
+    }
+  }
+}
+.how-it-works {
+  width: 96px;
+  height: 96px;
+}
+.services-container {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9fdff;
+  box-shadow: 0px 12px 20px rgba(216, 166, 20, 0.31);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.services-container_black {
+  background: black;
+}
+.offers {
+  width: 188px;
+  height: 163px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: start;
+  img {
+    width: 32px;
+    height: 35px;
+  }
+  .offers__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+  }
+  .offers__txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #5f5f64;
+  }
+}
+.txt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .txt-container__title {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .txt-container__txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #5f5f64;
+  }
+}
+.statistic {
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .statistic__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4em;
+    color: #718176;
+    text-transform: uppercase;
+  }
+  .statistic__text {
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+  }
+}
+.desing-container {
+  position: relative;
+  width: 178px;
+  height: 139px;
+  display: flex;
+  flex-direction: column;
+  .desing-container__img {
+    height: 40px;
+    width: 40px;
+    margin: 1px 0 0 24px;
+    filter: drop-shadow(19px 19px 47px rgba(161, 176, 207, 0.0361753));
+  }
+  .desing-container__txt {
+    margin: 20px 24px 0 109px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.533333px;
+    text-transform: uppercase;
+    color: rgb(25, 29, 35, 0.5);
+    mix-blend-mode: normal;
+  }
+  .desing-container__name {
+    margin: 28px 0 0 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 0 0;
+  .header-container__bag-container {
+    width: 50px;
+    height: 50px;
+    border: 1.4px solid #dfdfdf;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header-container__bag {
+      height: 16px;
+      width: 13.24px;
+    }
+  }
+}
+.first-container {
+  display: flex;
+
+  .first-container-txt-content {
+    position: relative;
+    height: 358px;
+    width: 682px;
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    .first-container-txt-content-ellipse {
+      position: absolute;
+      top: 96px;
+      width: 205px;
+      height: 70px;
+      border: 3px solid #ff8a1f;
+      border-radius: 205px / 70px;
+    }
+    .first-container-txt-content-first {
+      position: relative;
+      font-family: 'Bai Jamjuree';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 80px;
+      color: #222223;
+    }
+    .first-container-txt-content-second {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #535354;
+    }
+    .get-card-container {
+      width: 182px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .get-card-container-btn {
+        height: 50px;
+        width: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .get-card-container-txt {
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 19px;
+        color: #222223;
+      }
+    }
+  }
+  .first-container-img-content {
+    width: 675px;
+    height: 327px;
+    align-self: end;
+    display: flex;
+
+    .first-container-img-content-blue {
+      position: relative;
+      height: 327px;
+      width: 447.2px;
+      background: linear-gradient(106.01deg, #80d1ff 0%, #44b2f1 69.58%);
+      border-right: 1.2px solid #3288b9;
+      border-radius: 4px 0px 0px 4px;
+      margin-left: 4px;
+      .visa-card_first-container {
+        margin-top: -17px;
+        transform: rotate(-23.39deg);
+      }
+
+      .how-it-works_first-container {
+        position: absolute;
+        left: 315px;
+        bottom: 35px;
+      }
+    }
+    .first-container-img-content-yellow {
+      height: 327px;
+      width: 226px;
+      background: linear-gradient(201.5deg, #ffd968 4.52%, #fac422 102.63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .first-container-img-content-services {
+        width: 138px;
+        height: 205px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+.second-container {
+  display: flex;
+  margin-top: 115px;
+  .second-container__header {
+    position: relative;
+    width: 233px;
+    height: 154px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .second-container__header-title-fire {
+      position: absolute;
+      top: -20px;
+      left: 45px;
+    }
+    .second-container__header-title {
+      font-family: 'Bai Jamjuree';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 42px;
+    }
+    .second-container__header-txt {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.01em;
+      color: #5f5f64;
+    }
+  }
+  .second-container__offers-container {
+    width: 812px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 159px;
+  }
+}
+.third-container {
+  background: rgb(82, 192, 255, 0.25);
+
+  .third-container__inner {
+    height: 417px;
+    margin-top: 131px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .third-container__ellipse {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      top: -35px;
+    }
+    .third-container__txt-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .txt-container_left {
+        width: 261px;
+        height: 144px;
+      }
+      .txt-container_right {
+        width: 264px;
+        height: 138px;
+      }
+    }
+  }
+}
+.four-container {
+  height: 642px;
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .four-container__header {
+    width: 643px;
+    height: 196px;
+    margin-top: 73px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .four-container__header-title {
+      font-family: 'Bai Jamjuree';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: 0.01em;
+    }
+    .four-container__header-subtitle {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #767e7e;
+    }
+  }
+  .four-container__statistics {
+    width: 1090px;
+    height: 209px;
+    margin-top: 91px;
+    display: flex;
+    border: solid;
+    border-image-slice: 1;
+    border-width: 1.2px;
+    border-image-source: linear-gradient(
+      90deg,
+      #909c92 20.73%,
+      rgba(144, 156, 146, 0) 100%
+    );
+    border-left: 0px;
+    .statistic_product {
+      width: 225px;
+      border-right: 1.2px solid rgb(144, 156, 146);
+    }
+    .statistic_likes {
+      width: 348px;
+      border-right: 1.2px solid rgb(169, 179, 171);
+    }
+    .statistic_sale {
+      width: 252px;
+      border-right: 1.2px solid rgb(188, 195, 189);
+    }
+    .statistic_customers {
+      width: 265px;
+    }
+  }
+}
+.fifth-container {
+  height: 619px;
+  display: flex;
+
+  align-items: center;
+  .fifth-container__img-content {
+    width: 568px;
+    height: 507px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #cfedff;
+
+    .fifth-container__inner-container {
+      width: 610px;
+      height: 412px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: 35px;
+      background: #ffffff;
+      box-shadow: 15px 70px 100px rgba(0, 0, 0, 0.06);
+      border-radius: 20px;
+      .fifth-container__inner-container-top {
+        position: relative;
+        height: 179.5px;
+        width: 573.8px;
+        margin-top: 20.46px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 0px 18px 30px rgba(111, 111, 111, 0.07);
+        border-radius: 18.83px;
+        .fifth-container__img-content-line {
+          position: absolute;
+          z-index: 3;
+          top: 130px;
+          left: -50px;
+          box-shadow: 8px 8px 7px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.28) inset;
+        }
+        .fifth-container__inner-container-top-title {
+          width: 510px;
+          height: 41px;
+          margin-top: 21.54px;
+          display: flex;
+          justify-content: space-between;
+
+          .fifth-container__inner-container-top-title-left-title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #2a2a2a;
+          }
+          .fifth-container__inner-container-top-title-left-subtitle {
+            margin-top: 7px;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            color: #8e99ab;
+          }
+          .fifth-container__inner-container-top-title-right {
+            margin-top: 6px;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            color: #8e99ab;
+          }
+        }
+        .fifth-container__inner-container-top-statics {
+          height: 55px;
+          width: 510px;
+          margin: 22.92px;
+          position: relative;
+          display: flex;
+          .fifth-container__inner-container-top-statics-points {
+            position: absolute;
+          }
+          .fifth-container__inner-container-top-statics-left {
+            height: 55px;
+
+            width: 78px;
+            padding: 12.6px 0 0 18px;
+
+            .fifth-container__inner-container-top-statics-left-text {
+              font-weight: 500;
+              font-size: 12.631px;
+              line-height: 16px;
+              color: #191d23;
+              margin-bottom: 8px;
+              span {
+                color: #b1b4b8;
+              }
+            }
+          }
+          .fifth-container__inner-container-top-statics-right {
+            width: 390.52px;
+            height: 50.52px;
+            margin-left: 42.28px;
+            display: flex;
+
+            .fifth-container__inner-container-top-statics-right-txt {
+              margin-top: 24.83px;
+              font-weight: 700;
+              font-size: 13px;
+              line-height: 13px;
+            }
+            .fifth-container__inner-container-top-statics-right-point {
+              height: 2.7px;
+              width: 2.7px;
+              margin: 34.26px 17.69px 0 12.6px;
+              border-radius: 50%;
+              background-color: gray;
+            }
+            .fifth-container__inner-container-top-statics-right-equalizer {
+              width: 227.36px;
+              height: 50.52px;
+              margin-left: 33.17px;
+            }
+          }
+        }
+      }
+      .fifth-container__inner-container-bottom {
+        width: 573.81px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        .desing-container_grey {
+          border-radius: 18px;
+          box-shadow: 19px 19px 47px rgba(161, 176, 207, 0.2062);
+          ._left-container {
+            position: absolute;
+            top: -23px;
+            left: 24px;
+          }
+          .desing-container__name {
+            color: rgb(25, 29, 35, 0.5);
+          }
+        }
+        .desing-container_black {
+          background: #222223;
+
+          box-shadow: 35px 35px 65px rgba(206, 206, 206, 0.5);
+          .desing-container__txt {
+            color: rgb(255, 255, 255, 0.5);
+          }
+        }
+      }
+    }
+  }
+  .fifth-container__txt-content {
+    width: 458px;
+    height: 470px;
+    margin-left: 113px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .fifth-container__txt-content-header {
+      height: 191px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      .fifth-container__txt-content-header-title {
+        font-family: 'Bai Jamjuree';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 62px;
+        letter-spacing: -0.01em;
+      }
+      .fifth-container__txt-content-header-subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #727272;
+      }
+    }
+    .fifth-container__txt-content-about {
+      height: 214px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+.about-txt {
+  height: 92px;
+  display: flex;
+
+  .about-txt__circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 28px 60px rgba(152, 152, 152, 0.15);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-txt__inner-txt-container {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .about-txt__inner-txt-container-title {
+      font-family: 'Bai Jamjuree';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .about-txt__inner-txt-container-txt {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      color: #727272;
+    }
+  }
+}
+.sixth-container {
+  height: 522px;
+  margin-top: 122px;
+  background: #41b3f4;
+  padding: 114px 0 0 0;
+
+  .sixth-container__inner {
+    height: 240px;
+    width: 1170px;
+    position: relative;
+    display: flex;
+
+    .sixth-container__left {
+      height: 210px;
+      width: 120px;
+      margin-top: 30px;
+      .sixth-container__left-txt {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.01em;
+        color: #414449;
+        margin-bottom: 28px;
+      }
+    }
+    .sixth-container__line {
+      width: 8px;
+      height: 133px;
+      margin: 4px 0 0 75px;
+      background: #718176;
+    }
+    .sixth-container__mid {
+      width: 430px;
+      height: 240px;
+      margin-left: 81px;
+      .sixth-container__mid-title {
+        font-family: 'Bai Jamjuree';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: -0.02em;
+        text-transform: capitalize;
+        color: #000000;
+      }
+      .sixth-container__mid-btn {
+        margin-top: 42px;
+        width: 160px;
+        height: 58px;
+        background: #e15c19;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+
+        color: #ffffff;
+      }
+    }
+    .visa-card_sixth-container {
+      margin-top: 40px;
+      margin-left: 114px;
+      transform: rotate(-90deg);
+    }
+    .sixth-container__bg-img {
+      position: absolute;
+      top: -114px;
+      left: 657px;
+    }
+  }
+}
+.footer-container {
+  height: 78px;
+  margin-top: 104px;
+  display: flex;
+  align-items: center;
+
+  .footer-container__right-side {
+    width: 277px;
+    margin-left: 469px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container__right-side-signup-login {
+    width: 128px;
+
+    display: flex;
+    justify-content: space-between;
+    a {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+
+      letter-spacing: 0.01em;
+
+      color: #404041;
+    }
+  }
+  .footer-container__right-side-social {
+    width: 88px;
+    height: 12.02px;
+    display: flex;
+    justify-content: space-between;
+    .footer-container__right-side-social-insta {
+      height: 12px;
+      width: 12px;
+      position: relative;
+      .footer-container__right-side-social-insta-shoot {
+        position: absolute;
+        left: 2px;
+        top: 2px;
+      }
+    }
+  }
+}
